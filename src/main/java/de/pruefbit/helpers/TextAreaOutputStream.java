@@ -10,7 +10,7 @@ import java.io.OutputStream;
 public class TextAreaOutputStream extends OutputStream {
 
     private final JTextArea textArea;
-    private final StringBuilder text = new StringBuilder();
+    private final StringBuilder lineBuffer = new StringBuilder();
 
     public TextAreaOutputStream(JTextArea textArea) {
         this.textArea = textArea;
@@ -28,10 +28,10 @@ public class TextAreaOutputStream extends OutputStream {
     public void write(int ch) {
         if (ch == '\r') return;
         if (ch == '\n') {
-            textArea.append(text.toString());
-            text.setLength(0);
+            textArea.append(lineBuffer.toString());
+            lineBuffer.setLength(0);
         }
-        text.append((char) ch);
+        lineBuffer.append((char) ch);
     }
 
 }
