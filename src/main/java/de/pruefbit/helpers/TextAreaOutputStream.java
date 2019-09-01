@@ -25,13 +25,13 @@ public class TextAreaOutputStream extends OutputStream {
     }
 
     @Override
-    public void write(int b) {
-        if (b == '\r') return;
-        if (b == '\n') {
+    public void write(int ch) {
+        if (ch == '\r') return;
+        if (ch == '\n') {
             textArea.append(text.toString());
             text.setLength(0);
         }
-        text.append((char) b);
+        text.append((char) ch);
     }
 
 }
