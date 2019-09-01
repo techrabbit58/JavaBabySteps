@@ -2,7 +2,7 @@ package com.example.babysteps;
 
 import javax.swing.*;
 
-public class HelloWorldMessage {
+class HelloWorldMessage {
 
     public static void main(String[] args) {
         JOptionPane.showMessageDialog(

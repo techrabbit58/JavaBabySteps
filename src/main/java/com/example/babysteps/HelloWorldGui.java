@@ -21,6 +21,12 @@ class HelloWorldGui extends JFrame {
         textArea.setPreferredSize(new Dimension(400, 300));
         add(BorderLayout.CENTER, new JScrollPane(textArea));
 
+        getRootPane().registerKeyboardAction(
+                e -> dispose(),
+                KeyStroke.getKeyStroke('\033'),
+                JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT
+        );
+
         pack();
         setLocationRelativeTo(null);
 
