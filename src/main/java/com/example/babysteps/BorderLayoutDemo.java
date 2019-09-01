@@ -3,10 +3,10 @@ package com.example.babysteps;
 import javax.swing.*;
 import java.awt.*;
 
-public class BorderLayoutDemo extends JFrame {
+class BorderLayoutDemo extends JFrame {
 
-    private BorderLayoutDemo(String title) {
-        super(title);
+    private BorderLayoutDemo() {
+        super("Demo");
 
         setLayout(new BorderLayout());
         setMinimumSize(new Dimension(220, 20));
@@ -24,7 +24,7 @@ public class BorderLayoutDemo extends JFrame {
     }
 
     public static void main(String[] args) {
-        EventQueue.invokeLater(() -> new BorderLayoutDemo("Demo").setVisible(true));
+        EventQueue.invokeLater(() -> new BorderLayoutDemo().setVisible(true));
     }
 
 }

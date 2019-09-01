@@ -6,11 +6,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.PrintStream;
 
-public class HelloWorldGui extends JFrame {
+class HelloWorldGui extends JFrame {
 
     private static HelloWorldGui gui;
     private static PrintStream out;
-    private JTextArea textArea;
 
     private HelloWorldGui() {
         super("Hello World GUI");
@@ -18,7 +17,7 @@ public class HelloWorldGui extends JFrame {
         setLayout(new BorderLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        textArea = new JTextArea(12, 40);
+        JTextArea textArea = new JTextArea(12, 40);
         textArea.setPreferredSize(new Dimension(400, 300));
         add(BorderLayout.CENTER, new JScrollPane(textArea));
 

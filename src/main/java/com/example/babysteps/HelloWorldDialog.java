@@ -3,7 +3,7 @@ package com.example.babysteps;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class HelloWorldDialog extends JDialog {
+class HelloWorldDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;

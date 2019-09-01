@@ -5,10 +5,10 @@ import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class HelloWorldVisual extends JFrame {
+class HelloWorldVisual extends JFrame {
 
-    private HelloWorldVisual(String title) {
-        super(title);
+    private HelloWorldVisual() {
+        super("Hello World Visual");
 
         JLabel helloWorldLabel = new JLabel("Hello, world!");
         helloWorldLabel.setPreferredSize(new Dimension(300, 50));
@@ -53,6 +53,6 @@ public class HelloWorldVisual extends JFrame {
     }
 
     public static void main(String[] args) {
-        EventQueue.invokeLater(() -> new HelloWorldVisual("Hello World Visual").setVisible(true));
+        EventQueue.invokeLater(() -> new HelloWorldVisual().setVisible(true));
     }
 }

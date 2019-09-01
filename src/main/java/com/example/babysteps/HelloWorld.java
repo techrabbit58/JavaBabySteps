@@ -1,6 +1,6 @@
 package com.example.babysteps;
 
-public class HelloWorld {
+class HelloWorld {
 
     public static void main(String[] args) {
 
