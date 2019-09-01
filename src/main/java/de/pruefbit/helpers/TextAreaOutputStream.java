@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.io.OutputStream;
 
 /**
- * Implementation is my own, but follows a stream solution from the book "Java Cookbook"
+ * Implementation is my own, but follows a solution from the book "Java Cookbook"
  * of Ian F. Darwin (Ch. 14.11, 3rd Ed., O'Reilly 2014).
  */
 public class TextAreaOutputStream extends OutputStream {
